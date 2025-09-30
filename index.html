@@ -17,7 +17,8 @@
   <div class="card">
     <h3>About me</h3>
     <p>
-      Perkenalkan, saya Rendi Ramadhan. Saya memiliki latar belakang dan minat di bidang Teknik Jaringan dan Telekomunikasi, dengan pengalaman dalam pengelolaan infrastruktur jaringan, konfigurasi perangkat, serta penerapan keamanan data. Saya berkomitmen untuk terus mengembangkan kompetensi di bidang teknologi komunikasi guna memberikan kontribusi nyata dalam meningkatkan kualitas konektivitas dan layanan digital.
+      Perkenalkan, saya Rendi Ramadhan. Saya memiliki latar belakang dan minat di bidang Teknik Jaringan dan Telekomunikasi, dengan pengalaman dalam pengelolaan infrastruktur jaringan, konfigurasi perangkat, serta penerapan keamanan data. Saya berkomitmen untuk terus mengembangkan kompetensi di bidang teknologi komunikasi guna memberikan kontribusi nyata dalam meningkatkan kualitas konektivitas dan layanan digital.
+    </p>
   </div>
 </section>
 
@@ -41,7 +42,8 @@
       <img src="image/smktelkombandung-Photoroom.png" alt="SMK Telkom Bandung" class="school-logo">
       <h3>Smk Telkom Bandung</h3>
       <p>
-        Jurusan Teknik Jaringan Telekomunikasi dan Komputer merupakan program studi yang memadukan bidang teknik elektro dan ilmu komputer, dengan fokus pada pengembangan sistem perangkat keras, perangkat lunak, serta jaringan komputer.
+        Jurusan Teknik Jaringan Telekomunikasi dan Komputer merupakan program studi yang memadukan bidang teknik elektro dan ilmu komputer, dengan fokus pada pengembangan sistem perangkat keras, perangkat lunak, serta jaringan komputer.
+      </p>
       <div class="tags">
         <span class="tag">Networking</span>
         <span class="tag">Programming</span>
@@ -51,33 +53,35 @@
 
   <!-- Section Contact -->
   <section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <form class="card">
-      <input type="text" placeholder="Enter your name" required>
-      <input type="email" placeholder="Enter your email" required>
-      <input type="tel" placeholder="Phone Number">
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <h2>Get In Touch</h2>
+  <form class="card" action="https://formspree.io/f/xvgwawev" method="POST">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
 
     <div class="socials">
-  <a href="https://github.com/rendiramadhan2007-star" target="_blank">
-    <img src="image/icons8-github-logo-240.png" alt="GitHub">
-  </a>
-  <a href="https://www.linkedin.com/in/rendi-ramadhan-66396a378" target="_blank">
-    <img src="image/icons8-linkedin-250.png" alt="LinkedIn">
-  </a>
-  <a href="https://www.instagram.com/rrndirmdhn_/" target="_blank">
-    <img src="image/icons8-instagram-250.png" alt="Instagram">
-  </a>
-</div>
+      <a href="https://github.com/rendiramadhan2007-star" target="_blank">
+        <img src="image/icons8-github-logo-240.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/rendi-ramadhan-66396a378" target="_blank">
+        <img src="image/icons8-linkedin-250.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/rrndirmdhn_/" target="_blank">
+        <img src="image/icons8-instagram-250.png" alt="Instagram">
+      </a>
+    </div>
   </section>
 
   <!-- Background Music -->
   <audio id="bg-music" autoplay loop muted>
-  <source src="music/frankocean_wiseaman_backsound.mp3.mp4" type="audio/mpeg">
-  Browser kamu tidak mendukung audio.
-</audio>
+    <source src="music/frankocean_wiseaman_backsound.mp3.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
 
 <script>
   const music = document.getElementById("bg-music");
@@ -88,7 +92,8 @@
     music.play();
   }, { once: true });
 </script>
-</body>
-</html>
+
+<!-- Panggil file JavaScript eksternal -->
+<script src="script.js"></script>
 </body>
 </html>

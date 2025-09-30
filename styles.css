@@ -58,7 +58,7 @@ body {
 .avatar {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 0; 
 }
 
 .profile-pic {
@@ -70,24 +70,27 @@ body {
   border-radius: 0; 
 }
 
+/* Heading di bawah avatar */
+#home h2 {
+  margin-top: 0;   
+  padding-top: 0;
+}
+
+
 /* Card umum */
 .card {
-  background-color: #1E1231;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-  text-align: center;
+  background: #1e1033;     
+  border-radius: 10px;    
+  max-width: 600px;        
+  margin: 20px auto;       
+  text-align: justify;     
+  line-height: 1.6;        
+  color: #fff;             
 }
 
 .card h3 {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #d3d3d3;
-  text-align: justify;
+  text-align: center;      /* judul di tengah */
+  margin-bottom: 15px;     
 }
 
 /* Tools */
@@ -267,4 +270,16 @@ textarea {
   .card {
     max-width: 100%;
   }
+}
+
+#form-status {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#form-status:contains("Thank you") {
+  color: green;
+}
+#form-status:contains("Oops") {
+  color: red;
 }
