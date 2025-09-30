@@ -76,5 +76,23 @@
   </a>
 </div>
   </section>
+
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop muted>
+  <source src="music/frankocean_wiseaman_backsound.mp3.mp4" type="audio/mpeg">
+  Browser kamu tidak mendukung audio.
+</audio>
+
+<script>
+  const music = document.getElementById("bg-music");
+
+  // begitu user klik / tap di halaman, musik langsung unmute
+  document.body.addEventListener("click", () => {
+    music.muted = false;
+    music.play();
+  }, { once: true });
+</script>
+</body>
+</html>
 </body>
 </html>
