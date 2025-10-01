@@ -135,6 +135,7 @@ body {
 }
 .tags {
   margin-top: 12px;
+  text-align: center;
 }
 
 .tag {
@@ -145,7 +146,7 @@ body {
   padding: 4px 10px;
   border-radius: 20px;
   margin: 4px 6px 0 0;
-}
+} 
 
 /* Contact */
 form.card {
@@ -277,9 +278,18 @@ textarea {
   font-size: 14px;
   font-weight: 500;
 }
-#form-status:contains("Thank you") {
-  color: green;
+
+#form-status.success { color: green; }
+#form-status.error { color: red; }
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
 }
-#form-status:contains("Oops") {
-  color: red;
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
