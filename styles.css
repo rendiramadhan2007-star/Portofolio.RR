@@ -148,6 +148,41 @@ body {
   margin: 4px 6px 0 0;
 } 
 
+/* Certificates */
+.certificate-img {
+  width: 100%;              /* Supaya responsif */
+  max-width: 400px;         /* Ukuran maksimal gambar */
+  border-radius: 10px;
+  margin: 20px auto;        /* Tengah secara horizontal */
+  display: block;           /* Biar bisa di tengah */
+  box-shadow: 0 0 20px rgba(123, 63, 255, 0.25);
+}
+
+/* Tombol View Certificate */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-view {
+  background: #7b3fff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(123, 63, 255, 0.3);
+}
+
+.btn-view:hover {
+  background: #9b6bff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(155, 107, 255, 0.4);
+}
+
 /* Contact */
 form.card {
   display: flex;
